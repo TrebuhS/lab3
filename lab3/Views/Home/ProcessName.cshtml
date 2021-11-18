@@ -1,0 +1,12 @@
+﻿@model NameViewModel
+@if (Model.HowMany > 5 || Model.HowMany < 1)
+{
+    <p class="text-danger">Wrong number. It should be contained in range 1-5.</p>
+}
+else
+{
+    @for (int i = 0; i < Model.HowMany; i++)
+    {
+        <p>@Model.Name</p>
+    }
+}

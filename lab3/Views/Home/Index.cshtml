@@ -1,0 +1,17 @@
+﻿@model NameModel
+
+<form method="POST" asp-action="ProcessName">
+    <div class="form-group">
+        <label asp-for="Name">Enter your name</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="HowMany">Enter how many times you want to print your name</label>
+        <input asp-for="HowMany" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Submit" />
+    </div>
+</form>
